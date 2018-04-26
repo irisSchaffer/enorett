@@ -1,5 +1,10 @@
 import styles from './scss/test.scss'
-import results from './results'
+import renderSearch from './search'
+import renderResults from './results'
 
 // routing will live here in future
-results()
+if (window.location.search && window.location.search.length) {
+  renderResults()
+} else {
+  renderSearch()
+}

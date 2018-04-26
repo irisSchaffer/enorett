@@ -2,8 +2,6 @@ import nouns from './nouns'
 
 const getArticle = word => nouns[word]
 const body = document.getElementsByTagName('body')[0]
-const heading = document.createElement('h2')
-body.appendChild(heading)
 
 const getQuery = search => {
   return search
@@ -14,22 +12,35 @@ const getQuery = search => {
 }
 
 const renderArticle = ({ query, article }) => {
+  const heading = document.createElement('h2')
   heading.textContent = `${article} ${query}`
+  body.appendChild(heading)
 }
 
 const renderError = ({ query }) => {
-  heading.textContent = `The word ${query} doesn't exist :(`
+  const heading = document.createElement('h2')
+  heading.textContent = `The word "${query}" is not in our dictionary :(`
+  body.appendChild(heading)
+}
+
+const renderFooter = () => {
+  const back = document.createElement('a')
+  back.setAttribute('href', '/')
+  back.textContent = 'Change Word'
+  body.appendChild(back)
 }
 
 const render = () => {
   const query = getQuery(window.location.search)
-  const article = nouns[query]
+  const article = getArticle(query)
 
   if (!article) {
-    return renderError({ query })
+    renderError({ query })
+  } else {
+    renderArticle({ query, article })
   }
 
-  return renderArticle({ query, article })
+  renderFooter()
 }
 
 export default render
