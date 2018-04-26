@@ -1,3 +1,5 @@
 import styles from './scss/test.scss'
+import results from './results'
 
-console.log('test')
+// routing will live here in future
+results()
