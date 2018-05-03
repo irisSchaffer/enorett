@@ -1,3 +1,56 @@
-.test {
-  color: red;
+@import '_normalize', '_colours', '_grid', '_mixins', '_typography';
+
+body {
+  background: $color-sweYellowGradient;
+}
+
+.wrapInput {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.goBack {
+  color: #fff;
+  background-color: $color-sweBlue;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+textarea,
+input,
+button {
+  outline: none;
+}
+//accessability compensation with bottom border.
+
+.searchInput {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  height: 30px;
+  width: 50vw;
+  text-align: center;
+  &:focus {
+    border-bottom: 2px solid rgba($color-sweYellow, 0.7);
+  }
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+.searchButton {
+  margin: 10px;
 }

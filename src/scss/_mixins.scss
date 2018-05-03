@@ -1,0 +1,94 @@
+// MEDIA QUERIES
+
+@mixin breakpoint($point) {
+  @if $point == 'sm' {
+    @media (min-width: 20rem) {
+      // 320px
+      @content;
+    }
+  } @else if $point == 'md' {
+    @media (min-width: 48rem) {
+      // 768px
+      @content;
+    }
+  } @else if $point == 'lg' {
+    @media (min-width: 64rem) {
+      // 1024px
+      @content;
+    }
+  } @else if $point == 'xl' {
+    @media (min-width: 75rem) {
+      // 1200px
+      @content;
+    }
+  }
+}
+
+// SIZE
+
+@mixin size($width, $height: $width) {
+  /* If height is omitted, it falls back to the width value */
+  width: $width;
+  height: $height;
+}
+
+// PLACEHOLDER TEXT
+
+@mixin placeholder($color) {
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+// CSS3 TRIANGLE
+
+@mixin up-triangle($size, $color) {
+  @include size(0);
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-bottom: $size solid $color;
+  content: '';
+}
+@mixin down-triangle($size, $color) {
+  @include size(0);
+  border-left: $size solid transparent;
+  border-right: $size solid transparent;
+  border-top: $size solid $color;
+  content: '';
+}
+@mixin right-triangle($size, $color) {
+  @include size(0);
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-left: $size solid $color;
+  content: '';
+}
+@mixin left-triangle($size, $color) {
+  @include size(0);
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-right: $size solid $color;
+  content: '';
+}
+
+// ADD .FLEXBOX OR .NO-FLEXBOX CLASS. THIS MIXIN DEPENDS ON MODERNIZR SUPPORT
+/*
+@mixin supports-flexbox($support) {
+  @if $support == yes {
+	.flexbox & {
+	  @content;
+	}
+  }
+  @if $support == no {
+	.no-flexbox & {
+	  @content;
+	}
+  }
+}
+*/
