@@ -1,10 +1,10 @@
 const jsSearchInput = document.getElementById('js-searchInput')
 const jsGooeyThing = document.getElementById('js-gooeyThing')
 
-jsSearchInput.addEventListener('focus', function(e) {
-  jsGooeyThing.classList.add('gooeyFocus')
-  e.preventDefault()
-})
+// jsSearchInput.addEventListener('focus', function(e) {
+//   jsGooeyThing.classList.add('gooeyFocus')
+//   e.preventDefault()
+// });
 
 // jsuserInput.addEventListener('focusout', function(e) {
 //   jsGooeyThing.classList.remove('grow');

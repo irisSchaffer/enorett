@@ -9,9 +9,9 @@ const render = () => {
   const wrapInput = document.createElement('div')
   const gooeyThing = document.createElement('div')
 
-  input.setAttribute('type', 'search')
   input.setAttribute('class', 'searchInput')
   input.setAttribute('id', 'js-searchInput')
+  input.setAttribute('role', 'search')
   input.setAttribute('type', 'search')
   input.setAttribute('placeholder', 'Write here')
   input.addEventListener('input', evt => {
@@ -22,6 +22,7 @@ const render = () => {
   button.disabled = true
   button.textContent = 'Search'
   button.setAttribute('class', 'btn btn__searchbutton')
+  button.setAttribute('role', 'search')
   button.addEventListener('click', () => {
     search(input.value)
   })
