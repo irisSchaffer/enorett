@@ -19,7 +19,7 @@ const render = () => {
 
   button.disabled = true
   button.textContent = 'Search'
-  button.setAttribute('class', 'searchButton')
+  button.setAttribute('class', 'btn btn__searchbutton')
   button.addEventListener('click', () => {
     search(input.value)
   })

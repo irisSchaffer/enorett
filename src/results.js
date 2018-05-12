@@ -29,7 +29,7 @@ const renderError = ({ query }) => {
 const renderFooter = () => {
   const back = document.createElement('a')
   back.setAttribute('href', '/')
-  back.setAttribute('class', 'goBack')
+  back.setAttribute('class', 'btn btn__newSearch')
   back.textContent = 'New search'
   body.appendChild(back)
 }
