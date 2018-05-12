@@ -7,9 +7,11 @@ const render = () => {
   const input = document.createElement('input')
   const button = document.createElement('button')
   const wrapInput = document.createElement('div')
+  const gooeyThing = document.createElement('div')
 
   input.setAttribute('type', 'search')
   input.setAttribute('class', 'searchInput')
+  input.setAttribute('id', 'js-searchInput')
   input.setAttribute('type', 'search')
   input.setAttribute('placeholder', 'Write here')
   input.addEventListener('input', evt => {
@@ -24,7 +26,11 @@ const render = () => {
     search(input.value)
   })
 
+  gooeyThing.setAttribute('class', 'gooeyThing')
+  gooeyThing.setAttribute('id', 'js-gooeyThing')
+
   wrapInput.setAttribute('class', 'wrapInput')
+  wrapInput.appendChild(gooeyThing)
   wrapInput.appendChild(input)
   wrapInput.appendChild(button)
 
