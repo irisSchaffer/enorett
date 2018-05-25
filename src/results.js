@@ -8,7 +8,8 @@ const getQuery = search => {
     .substr(1)
     .split('&')
     .filter(query => query.startsWith('q='))
-    .map(query => query.substr(2))[0]
+    .map(query => query.substr(2))
+    .map(q => decodeURIComponent(q))[0]
 }
 
 const renderArticle = ({ query, article }) => {

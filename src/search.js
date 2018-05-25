@@ -1,5 +1,5 @@
-const search = input => evnt => {
-  window.location.href = `?q=${input.value}`
+const search = value => {
+  window.location.href = `?q=${value}`
 }
 
 const render = () => {
@@ -15,7 +15,9 @@ const render = () => {
 
   button.disabled = true
   button.textContent = 'Search'
-  button.addEventListener('click', search(input))
+  button.addEventListener('click', evt => {
+    search(input.value)
+  })
 
   body.appendChild(input)
   body.appendChild(button)
