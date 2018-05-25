@@ -15,11 +15,13 @@ const getQuery = search => {
 const renderArticle = ({ query, article }) => {
   const heading = document.createElement('h2')
   heading.textContent = `${article} ${query}`
+  heading.setAttribute('class', 'helper')
   body.appendChild(heading)
 }
 
 const renderError = ({ query }) => {
   const heading = document.createElement('h2')
+  heading.setAttribute('class', 'helper')
   heading.textContent = `The word "${query}" is not in our dictionary :(`
   body.appendChild(heading)
 }
@@ -27,7 +29,8 @@ const renderError = ({ query }) => {
 const renderFooter = () => {
   const back = document.createElement('a')
   back.setAttribute('href', '/')
-  back.textContent = 'Change Word'
+  back.setAttribute('class', 'btn btn__newSearch')
+  back.textContent = 'New search'
   body.appendChild(back)
 }
 

@@ -1,0 +1,28 @@
+@import '_normalize',
+  '_colours',
+  '_mixins',
+  '_typography',
+  '_wraps',
+  '_input',
+  '_gooeyThing';
+
+body {
+  background: $color-sweYellowGradient;
+}
+
+.btn {
+  background-color: $color-sweBlue;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  left: 0;
+  margin: 4rem auto;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  width: 120px;
+}

@@ -1,0 +1,12 @@
+.gooeyThing {
+  background-color: $color-sweBlue;
+  border-radius: 50%;
+  min-height: 100px;
+  position: absolute;
+  min-width: 100px;
+  transform: translateY(5px) scale(3);
+  z-index: -1;
+  &.gooeyFocus {
+    transform: translateY(5px) scale(4);
+  }
+}
