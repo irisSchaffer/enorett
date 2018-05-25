@@ -1,5 +1,5 @@
 const search = value => {
-  window.location.href = `?q=${value}`
+  window.location.href = `?q=${encodeURIComponent(value)}`
 }
 
 const render = () => {
