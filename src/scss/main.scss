@@ -6,6 +6,10 @@
   '_input',
   '_gooeyThing';
 
+body {
+  background: $color-sweYellowGradient;
+}
+
 .btn {
   background-color: $color-sweBlue;
   border: none;
