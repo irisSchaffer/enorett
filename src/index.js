@@ -1,4 +1,6 @@
-import styles from './scss/test.scss'
+// eslint-disable-next-line
+import styles from './scss/test.scss' // import to include file in bundle
+
 import renderSearch from './search'
 import renderResults from './results'
 
