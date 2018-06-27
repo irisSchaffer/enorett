@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+//to-do remove unsed weights
+
+.title {
+  color: $color-sweBlue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 90px;
+  text-align: center;
+  @include breakpoint(md) {
+    font-size: 4rem;
+  }
+}
+
+.helper {
+  color: $color-sweBlue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 90px;
+  text-align: center;
+  @include breakpoint(md) {
+    font-size: 4rem;
+  }
+}

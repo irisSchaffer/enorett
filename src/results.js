@@ -8,7 +8,8 @@ const getQuery = search => {
     .substr(1)
     .split('&')
     .filter(query => query.startsWith('q='))
-    .map(query => query.substr(2))[0]
+    .map(query => query.substr(2))
+    .map(q => decodeURIComponent(q))[0]
 }
 
 const renderArticle = ({ query, article }) => {
@@ -22,10 +23,15 @@ const renderArticle = ({ query, article }) => {
   headingEl.appendChild(queryEl)
 
   body.appendChild(headingEl)
+  const heading = document.createElement('h2')
+  heading.textContent = `${article} ${query}`
+  heading.setAttribute('class', 'helper')
+  body.appendChild(heading)
 }
 
 const renderError = ({ query }) => {
   const heading = document.createElement('h2')
+  heading.setAttribute('class', 'helper')
   heading.textContent = `The word "${query}" is not in our dictionary :(`
   body.appendChild(heading)
 }
@@ -33,7 +39,8 @@ const renderError = ({ query }) => {
 const renderFooter = () => {
   const back = document.createElement('a')
   back.setAttribute('href', '/')
-  back.textContent = 'Change Word'
+  back.setAttribute('class', 'btn btn__newSearch')
+  back.textContent = 'New search'
   body.appendChild(back)
 }
 

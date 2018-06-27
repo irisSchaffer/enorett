@@ -1,0 +1,283 @@
+.grid-u,
+[class*='grid-u-'] {
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  word-spacing: normal;
+  zoom: 1;
+}
+
+.grid-r {
+  word-spacing: -0.34em;
+}
+
+/* Opera 12 on Windows needs word-spacing. The ".opera-only" selector is used to prevent actual prefocus styling and is not required in markup. */
+
+.opera-only :-o-prefocus,
+.grid-r {
+  word-spacing: -0.43em;
+}
+
+@media screen and (min-width: 20em) {
+  .grid-u-sm-1-12 {
+    width: 8.3333%;
+  }
+
+  .grid-u-sm-1-6,
+  .grid-u-sm-2-12 {
+    width: 16.6667%;
+  }
+
+  .grid-u-sm-1-5 {
+    width: 20%;
+  }
+
+  .grid-u-sm-1-4,
+  .grid-u-sm-3-12 {
+    width: 25%;
+  }
+
+  .grid-u-sm-1-3,
+  .grid-u-sm-4-12 {
+    width: 33.3333%;
+  }
+
+  .grid-u-sm-5-12 {
+    width: 41.6667%;
+  }
+
+  .grid-u-sm-1-2,
+  .grid-u-sm-6-12 {
+    width: 50%;
+  }
+
+  .grid-u-sm-7-12 {
+    width: 58.3333%;
+  }
+
+  .grid-u-sm-3-5 {
+    width: 60%;
+  }
+
+  .grid-u-sm-2-3,
+  .grid-u-sm-4-6,
+  .grid-u-sm-8-12 {
+    width: 66.6667%;
+  }
+
+  .grid-u-sm-3-4,
+  .grid-u-sm-9-12 {
+    width: 75%;
+  }
+
+  .grid-u-sm-5-6,
+  .grid-u-sm-10-12 {
+    width: 83.3333%;
+  }
+
+  .grid-u-sm-11-12 {
+    width: 91.6667%;
+  }
+
+  .grid-u-sm-1 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .grid-u-md-1-12 {
+    width: 8.3333%;
+  }
+
+  .grid-u-md-1-6,
+  .grid-u-md-2-12 {
+    width: 16.6667%;
+  }
+
+  .grid-u-md-1-5 {
+    width: 20%;
+  }
+
+  .grid-u-md-1-4,
+  .grid-u-md-3-12 {
+    width: 25%;
+  }
+
+  .grid-u-md-1-3,
+  .grid-u-md-4-12 {
+    width: 33.3333%;
+  }
+
+  .grid-u-md-5-12 {
+    width: 41.6667%;
+  }
+
+  .grid-u-md-1-2,
+  .grid-u-md-6-12 {
+    width: 50%;
+  }
+
+  .grid-u-md-7-12 {
+    width: 58.3333%;
+  }
+
+  .grid-u-md-3-5 {
+    width: 60%;
+  }
+
+  .grid-u-md-2-3,
+  .grid-u-md-4-6,
+  .grid-u-md-8-12 {
+    width: 66.6667%;
+  }
+
+  .grid-u-md-3-4,
+  .grid-u-md-9-12 {
+    width: 75%;
+  }
+
+  .grid-u-md-5-6,
+  .grid-u-md-10-12 {
+    width: 83.3333%;
+  }
+
+  .grid-u-md-11-12 {
+    width: 91.6667%;
+  }
+
+  .grid-u-md-1 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .grid-u-lg-1-12 {
+    width: 8.3333%;
+  }
+
+  .grid-u-lg-1-6,
+  .grid-u-lg-2-12 {
+    width: 16.6667%;
+  }
+
+  .grid-u-lg-1-5 {
+    width: 20%;
+  }
+
+  .grid-u-lg-1-4,
+  .grid-u-lg-3-12 {
+    width: 25%;
+  }
+
+  .grid-u-lg-1-3,
+  .grid-u-lg-4-12 {
+    width: 33.3333%;
+  }
+
+  .grid-u-lg-5-12 {
+    width: 41.6667%;
+  }
+
+  .grid-u-lg-1-2,
+  .grid-u-lg-6-12 {
+    width: 50%;
+  }
+
+  .grid-u-lg-7-12 {
+    width: 58.3333%;
+  }
+
+  .grid-u-lg-3-5 {
+    width: 60%;
+  }
+
+  .grid-u-lg-2-3,
+  .grid-u-lg-4-6,
+  .grid-u-lg-8-12 {
+    width: 66.6667%;
+  }
+
+  .grid-u-lg-3-4,
+  .grid-u-lg-9-12 {
+    width: 75%;
+  }
+
+  .grid-u-lg-5-6,
+  .grid-u-lg-10-12 {
+    width: 83.3333%;
+  }
+
+  .grid-u-lg-11-12 {
+    width: 91.6667%;
+  }
+
+  .grid-u-lg-1 {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .grid-u-xl-1-12 {
+    width: 8.3333%;
+  }
+
+  .grid-u-xl-1-6,
+  .grid-u-xl-2-12 {
+    width: 16.6667%;
+  }
+
+  .grid-u-xl-1-5 {
+    width: 20%;
+  }
+
+  .grid-u-xl-1-4,
+  .grid-u-xl-3-12 {
+    width: 25%;
+  }
+
+  .grid-u-xl-1-3,
+  .grid-u-xl-4-12 {
+    width: 33.3333%;
+  }
+
+  .grid-u-xl-5-12 {
+    width: 41.6667%;
+  }
+
+  .grid-u-xl-1-2,
+  .grid-u-xl-6-12 {
+    width: 50%;
+  }
+
+  .grid-u-xl-7-12 {
+    width: 58.3333%;
+  }
+
+  .grid-u-xl-3-5 {
+    width: 60%;
+  }
+
+  .grid-u-xl-2-3,
+  .grid-u-xl-4-6,
+  .grid-u-xl-8-12 {
+    width: 66.6667%;
+  }
+
+  .grid-u-xl-3-4,
+  .grid-u-xl-9-12 {
+    width: 75%;
+  }
+
+  .grid-u-xl-5-6,
+  .grid-u-xl-10-12 {
+    width: 83.3333%;
+  }
+
+  .grid-u-xl-11-12 {
+    width: 91.6667%;
+  }
+
+  .grid-u-xl-1 {
+    width: 100%;
+  }
+}
