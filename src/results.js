@@ -13,6 +13,16 @@ const getQuery = search => {
 }
 
 const renderArticle = ({ query, article }) => {
+  const headingEl = document.createElement('h2')
+  const articleEl = document.createElement('em')
+  articleEl.textContent = article
+
+  const queryEl = document.createTextNode(` ${query}`)
+
+  headingEl.appendChild(articleEl)
+  headingEl.appendChild(queryEl)
+
+  body.appendChild(headingEl)
   const heading = document.createElement('h2')
   heading.textContent = `${article} ${query}`
   heading.setAttribute('class', 'helper')
