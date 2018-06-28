@@ -15,10 +15,10 @@ const getQuery = search => {
 const renderArticle = ({ query, article }) => {
   const headingEl = document.createElement('h2')
   const articleEl = document.createElement('em')
+  headingEl.setAttribute('class', 'helper')
   articleEl.textContent = article
 
   const queryEl = document.createTextNode(` ${query}`)
-
   headingEl.appendChild(articleEl)
   headingEl.appendChild(queryEl)
 
@@ -26,13 +26,12 @@ const renderArticle = ({ query, article }) => {
   const heading = document.createElement('h2')
   heading.textContent = `${article} ${query}`
   heading.setAttribute('class', 'helper')
-  body.appendChild(heading)
 }
 
 const renderError = ({ query }) => {
   const heading = document.createElement('h2')
   heading.setAttribute('class', 'helper')
-  heading.textContent = `The word "${query}" is not in our dictionary :(`
+  heading.textContent = `The word '${query}' is not in our dictionary :(`
   body.appendChild(heading)
 }
 

@@ -3,8 +3,15 @@
   '_mixins',
   '_typography',
   '_wraps',
+  '_img',
   '_input',
-  '_gooeyThing';
+  '_gooeyThing',
+  '_footer';
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background: $color-sweYellowGradient;

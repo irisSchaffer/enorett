@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
 //to-do remove unsed weights
 
 .title {
@@ -16,11 +16,11 @@
 .helper {
   color: $color-sweBlue;
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 900;
   margin-top: 90px;
   text-align: center;
   @include breakpoint(md) {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
